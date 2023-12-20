@@ -5,7 +5,9 @@ public class ConcurrentErrorJava {
         plus.start();
         minus.start();
 
-        Thread.sleep(1000);
+        plus.join();
+        minus.join();
+
         System.out.println("========================");
         System.out.println("기댓값 : 0 \t실제값 : " + result);
         System.out.println("========================");
