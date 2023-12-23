@@ -1,4 +1,4 @@
-public class MonitorWaitSignalPetersonSolution {
+public class MonitorWaitSignalSolution {
     public static void main(String[] args) throws InterruptedException {
         Thread plus = new Thread(new Plus());
         Thread minus = new Thread(new Minus());
